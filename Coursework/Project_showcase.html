@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Title of the webpage -->
+        <title>Techspiration Society</title> 
+        <!-- Custom CSS -->
+        <link rel='stylesheet' href='css/main.css'>
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo -->
+            <img src='images/Techspirationlogo.jpg' id="logo" alt="logo"/> 
+            <!-- Title -->
+            <h1>Techspiration Society</h1>  
+        </header>
+        
+        <nav> 
+            <!-- Navigation menu -->
+            <ol>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='img_gallery.html'>Gallery</a></li>
+                <li><a href='current_members.html'>Current Members</a></li>
+                <li><a href='event_calendar.html'>Events</a></li>
+                <li><a href='contact_us.html'>Contact us</a></li>
+                <li><a href='Project_showcase.html'>Showcase</a></li>
+                <li><a href='Tech_blog.html'>Blog</a></li>
+            </ol>
+        </nav>
+
+        <main>  
+            <div class="container1" id="Showcase">
+            
+                <h1>Project Showcase</h1>
+                <!-- Project 1 -->
+                <div class="project">
+                    <h2>Firefighter Drone</h2>
+                    <img src="images/newsimage.jpg" alt="firefighter">
+                    <p>The motherboard one of our members designed was used in this drone that is helping save thousands of fire fighters arround the world by safley dumping water over forrest fires stopping the risk for firefighters.</p>
+                    <!-- Embedded YouTube Video -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pBKb-aqgraQ?si=Y_2_oA4Gc-gp2ZzU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project">
+                    <h2>Ocean Cleaner</h2>
+                    <img src="images/Oceancleaner.jpg" alt="Cleaner">
+                    <p>The trash collection mechanism for this ocean cleaner drone was made my another member and the drone and thousands others like it using our desighns are helping to remove millions of pounds of trash a year from our oceans.</p>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project">
+                    <h2>Water delivery drone</h2>
+                    <img src="images/Drone.jpg" alt="Water drone">
+                    <p>Using simillar tech from our fire fighting drone we repurposed it to be used as a water delivery drone meaning hunderds of thousands of people who dont have acsess to clean water becasue of wars or poverty can safley recive fresh drinking water.</p>
+                </div>
+        
+            </div>
+
+            <!-- Project Submission Form -->
+            <div class="submission-form">
+                <h2>Submit Your Project</h2>
+                <form id="projectForm">
+                    <!-- Input for project name -->
+                    <label for="projectName">Project Name:</label>
+                    <input type="text" id="projectName" name="projectName" required><br>
+                    
+                    <!-- Input for project image -->
+                    <label for="projectImage">Project Image:</label>
+                    <input type="file" id="projectImage" name="projectImage" accept="image/*" required><br>
+                    
+                    <!-- Input for project info -->
+                    <label for="projectInfo">Project Info:</label>
+                    <textarea id="projectInfo" name="projectInfo" rows="4" required></textarea><br>
+                    
+                    <!-- Submit button -->
+                    <button type="submit">Submit</button>
+                </form>
+                <!-- Submission message display -->
+                <p id="submissionMessage"></p>
+            </div>
+        </main>
+        
+        <!-- JavaScript for handling form submission -->
+        <script>
+            document.getElementById("projectForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+                var projectName = document.getElementById("projectName").value; // Get project name
+                setTimeout(function() {
+                    document.getElementById("submissionMessage").innerText = "Thanks for submitting your project!"; // Display submission message after a delay
+                }, 2000);
+                document.getElementById("projectName").value = ""; // Clear project name input field
+            });
+        </script>
+        
+        <footer> 
+            <!-- Footer Content -->
+            <p>Copyright Danny Skinner 2024</p> 
+        </footer>
+    </body>
+</html>
+
+
+
+
+        
+

@@ -1,49 +1,82 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title><h1>Techspiration Scociety</h1></title>
+    <head> <meta charset="UTF-8">
+        <!-- Title of the webpage -->
+        <title>Techspiration Society</title>
+        <!-- Link to custom CSS file -->
+        <link rel='stylesheet' href='css/main.css'>
     </head>
 
     <body>
-        <header><h1>Techspiration Scociety</h1> </header>
-        <nav> </nav>
-        <li><a href='index.html'>Home</a> </li>
-        <li><a href='index.html'>Gallery</a></li>
-        <li><a href='index.html'>Current Members</a></li>
-        <li><a href='index.html'>Events</a></li>
-        <li><a href='index.html'>Contact us</a></li>
+        <header>
+            <!-- Logo and Title -->
+            <img src='images/Techspirationlogo.jpg' id="logo" alt="logo"/>
+            <h1>Techspiration Society</h1>
+        </header>
+        <nav> 
+            <ol>
+                <li><a href='index.html'>Home</a> </li>
+                <li><a href='img_gallery.html'>Gallery</a></li>
+                <li><a href='current_members.html'>Current Members</a></li>
+                <li><a href='event_calendar.html'>Events</a></li>
+                <li><a href='contact_us.html'>Contact us</a></li>
+                <li><a href='Project_showcase.html'>Showcase</a></li>
+                <li><a href='Tech_blog.html'>Blog</a></li>
+
+            </ol>
+        </nav>
+
         <main>  
-            <div>form>
-                <fieldset>
-                <legend>Contact Us using the below form.</legend>
+            <!-- Main Content Section -->
+            <div class="row">
+                <!-- Left Column -->
+                <div class="collumn" id="left-col">
+                    <fieldset>
+                        <!-- Form to submit contact details -->
+                        <legend>Contact Us using the below form.</legend>
 
-                <label for="name">Name:</label>
-                <input type="text" name="name" value=""/> <br/>
-                
-                <label for="Email">Email:</label>
-                <input type="text" name="Email" value=""/> <br/>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value=""><br/>
+                        
+                        <label for="Email">Email:</label>
+                        <input type="Email" id="Email" name="Email" value=""/> <br/>
 
-                <input type="checkbox" id="Membership staus" name="Membership status" value="I am a Member">
-                <label for="Membership staus"> I am a Member</label><br>
-                <input type="checkbox" id="Membership staus" name="Membership staus" value="I am not a Member">
-                <label for="Membership staus"> I am not a Member</label><br>
+                        <!-- Membership Status -->
+                        <input type="checkbox" id="Membership-staus" name="Membership status" value="I am a Member">
+                        <label for="Membership-staus"> I am a Member</label><br>
+                        <input type="checkbox" id="Membership-status" name="Membership status" value="I am not a Member">
+                        <label for="Membership-staus"> I am not a Member</label><br>
 
-                <label for="Details about reason for contact">Details about reason for contact:</label>
-                <textarea name="Details about reason for contact" cols="45" rows="5"></textarea><br><br>
-                
+                        <label for="Details-about-reason-for-contact">Details about reason for contact:</label>
+                        <input type="text" id="Details-about-reason-for-contact" name="Details-about-reason-for-contact" value=""/> <br/>
+                        <textarea name="Details about reason for contact" cols="45" rows="5"></textarea><br><br>
+                        
 
-                <label for="Relevent files">Relevent files:</label>
-                <input type="file" name="Relevent files" value=""/> <br/>
-                 
-                <input type="submit" value="Submit"/>
+                        <label for="Relevant-files">Relevant files:</label>
+                        <input type="file" id="Relevant-files" name="Relevant-files"> <br/>
 
-                </fieldset>
-                </form>
+                        
+                        <!-- Button to submit form -->
+                        <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully!"'>Submit</button> 
+                    </fieldset>   
+                    <!-- Outcome Message -->
+                    <div>
+                        <p id="form_outcome"></p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="collumn" id="right-col">
+                    <!-- Twitter Embed -->
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Well <a href="https://twitter.com/hashtag/TheSims5?src=hash&amp;ref_src=twsrc%5Etfw">#TheSims5</a> is expected to be free to play, with it looking to be a more social game similar to that of IMVU.<br>I&#39;ve found <a href="https://twitter.com/hashtag/TheSims4?src=hash&amp;ref_src=twsrc%5Etfw">#TheSims4</a> lacking and broken in parts hence stuck with early versions including <a href="https://twitter.com/hashtag/TheSims3?src=hash&amp;ref_src=twsrc%5Etfw">#TheSims3</a> therefore hesitant to part cash again.<br>Read <a href="https://twitter.com/apacherose3?ref_src=twsrc%5Etfw">@apacherose3</a> article: <a href="https://t.co/82PBw0rSLB">https://t.co/82PBw0rSLB</a></p>&mdash; TechSpiration (@SpirationTech) <a href="https://twitter.com/SpirationTech/status/1713146626192089202?ref_src=twsrc%5Etfw">October 14, 2023</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>      
         </main>
-        <footer> <p>"Copyright Danny Skinner"</p> </footer>
-</html>
 
-- Their name.
-- Email address.
-- Membership status (either member or non-member). 
-- Details of why they are contacting the society.
-- Any relevant file attachments.
+        <!-- Footer -->
+        <footer class="position">
+            <p>Copyright Danny Skinner 2024<p>
+        </footer>
+    </body>
+</html>

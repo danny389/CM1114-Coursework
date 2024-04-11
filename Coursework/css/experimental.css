@@ -1,0 +1,29 @@
+/* CSS styles for body */
+body {
+    background-color: black;
+  }
+  
+  /* CSS styles for header */
+  header {
+    padding: 10px;
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 16px;
+  }
+  
+  /* CSS styles for logo */
+  #logo {
+    width: 80px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  /* CSS styles for headings and paragraphs */
+  h1, h2, h3, h4, h5, p {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+  }
