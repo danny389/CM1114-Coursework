@@ -1,0 +1,307 @@
+
+
+/* CSS styles for header */
+header {
+  padding: 10px;
+  background-color: grey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin: 16px;
+}
+
+/* CSS styles for logo */
+#logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* CSS styles for headings and paragraphs */
+h1, h2, h3, h4, h5, p {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Specific styles for h1 */
+h1 {
+  font-size: 43px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  display: inline;
+}
+
+/* Specific styles for h3 */
+h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Specific styles for paragraphs */
+p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* CSS styles for navigation */
+nav ul {
+  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  border-radius: 2px;
+  background-color: red;
+  list-style-type: none;
+  float: left;
+  /* width: 10%; */
+  padding: 16px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: black;
+}
+
+.active {
+  padding: 10px;
+  background-color: darkred;
+}
+
+/* CSS styles for main content */
+main {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* CSS styles for aside */
+.news-article {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.article-content {
+  display: flex;
+}
+
+.article-image {
+  width: 200px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.article-text {
+  flex: 1;
+}
+
+.article-text h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.article-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+/* CSS styles for footer */
+footer {
+  padding: 10px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* CSS styles for tables */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin: 0 auto; 
+}
+
+table th, table td {
+  border: 2px solid #F0F0F0;
+  padding: 8px; 
+  width: 150px; 
+  text-align: center; 
+  vertical-align: middle; 
+  font-size: 10pt; 
+}
+
+table tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+table tr:hover {
+  background-color: grey;
+}
+
+table th {
+  background-color: red;
+  color: white;
+}
+
+/* CSS styles for columns */
+#right-col {
+  float: right;
+}
+
+#left-col {
+  float: left;
+}
+
+/* CSS styles for footer position */
+.position {
+  margin-top: 500px;
+  width: 100%;
+}
+
+/* CSS styles for carousel */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* CSS styles for gallery */
+.gallery-img {
+  width: 100%;
+}
+
+#img-gallery {
+  padding-top: 100px;
+}
+
+#img-gallery .row {
+  margin-bottom: 10px;
+}
+
+.margin {
+  margin: 50px;
+}
+
+.gal-img {
+  width: 100%;
+}
+
+.carousel-caption {
+  height: 490px;
+}
+
+/* CSS styles for image border on hover */
+.gal-img {
+  transition: border-color 0.3s ease;
+}
+
+.gal-img:hover {
+  border: solid red 4px;
+}
+
+/* Showcase css */
+.showcase {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.container1 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.project {
+  margin-bottom: 30px;
+}
+.project h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.project p {
+  color: #666;
+}
+
+/* Blog css */
+.Blog {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+.container2 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  
+}
+
+.tweet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.tweet {
+  background-color: #f9f9f9;
+  padding: 15px; 
+  border-radius: 8px;
+  width:calc( 20px);
+  font-size: 14px; 
+}
+
+.member-images .rounded-circle {
+  border-radius: 50%;
+}
+
+/* Style for the container */
+.member-images .container {
+  text-align: center;
+}
+
+/* Style for each member card */
+.member-images .container > div {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+div{
+  margin-top: 50px;
+}
